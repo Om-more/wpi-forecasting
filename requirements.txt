@@ -1,8 +1,6 @@
-pandas
-numpy
-matplotlib
-seaborn
-pickle
-prophet
-streamlit
-scikit-learn
+streamlit==1.32.2
+pandas==2.1.4
+numpy==1.26.4
+matplotlib==3.8.2
+prophet==1.1.5
+cmdstanpy==1.2.2
