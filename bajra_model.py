@@ -13,7 +13,7 @@ model = Prophet(
 )
 
 model.fit(train)
-future = model.make_future_dataframe(periods=12, freq='MS')
+future = model.make_future_dataframe(periods=12, freq='ME')
 forecast= model.predict(future)
 
 fig1 = model.plot(forecast)
