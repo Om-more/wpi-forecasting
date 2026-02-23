@@ -8,9 +8,9 @@ BASE_DIR = Path(__file__).parent
 MODEL_PATH = BASE_DIR / "all_crop_models.pkl"
 
 CROP_DATA_FILES = {
+    "masur": BASE_DIR / "Masur_data.csv",
     "bajra": BASE_DIR / "Bajra_data.csv",
     "moong": BASE_DIR / "Moong_data.csv",
-    "masur": BASE_DIR / "Masur_data.csv",
     "cauliflower": BASE_DIR / "Cauliflower_data.csv",
 }
 
@@ -35,7 +35,7 @@ if not MODEL_PATH.exists():
 models = load_models()
 st.sidebar.header("Controls")
 
-available_crops = sorted(models.keys())
+available_crops = (models.keys())
 
 selected_crop = st.sidebar.selectbox(
     "Select Commodity",
